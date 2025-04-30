@@ -1,0 +1,19 @@
+.main{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.design{
+   width: 250px;
+   height: 250px;
+   border: 2px solid black;
+   padding: 10px;
+   border-radius: 10px;
+   background-color: black;
+   color: white;
+}
+
+label,input{
+    display: block;
+}

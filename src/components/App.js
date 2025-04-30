@@ -1,11 +1,14 @@
-
-import React from "react";
+import React, { useState } from "react";
 import './../styles/App.css';
+import Step from "./Step";
 
 const App = () => {
+
+  const [currentStep , setCurrentStep] = useState("customer");
+
   return (
     <div>
-        {/* Do not remove the main div */}
+      <Step currentStep ={currentStep} setCurrentStep = {setCurrentStep} />
     </div>
   )
 }
