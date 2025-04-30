@@ -30,7 +30,7 @@ const Step = ({ currentStep, setCurrentStep }) => {
     <div className="main">
 
       {currentStep === "customer" && (
-        <form className="design">
+        <form className="design" id="step1">
           <h1>Customer Details</h1>
           <label>First Name:</label>
           <input type="text" id="first_name" />
@@ -43,7 +43,7 @@ const Step = ({ currentStep, setCurrentStep }) => {
       )}
 
       {currentStep === "car" && (
-        <form className="design">
+        <form className="design" id="step2">
           <h1>Car Details</h1>
           <label>Brand:</label>
           <input type="text" id="model" />
@@ -59,7 +59,7 @@ const Step = ({ currentStep, setCurrentStep }) => {
       )}
 
       {currentStep === "card" && (
-        <form className="design" onSubmit={handleSubmit}>
+        <form className="design" onSubmit={handleSubmit} id="step3">
           <h1>Payment Details</h1>
           <label>Credit Card Number:</label>
           <input type="number" id="card_info" />
